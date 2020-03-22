@@ -40,7 +40,7 @@ const puppeteer = require('puppeteer');
 	await browser.close();
 })();
 
-//This is main download function which takes the url of your image
+//This is main download function which takes the url of your video
 const fs = require("fs");
 const request = require("request");
 function download(uri, filename, callback) {
