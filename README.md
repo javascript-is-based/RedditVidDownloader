@@ -18,5 +18,8 @@ audio track is located next to it, and both are downloaded and merged with ffmpe
 
 Files are saved to `vid/` by default.
 
-## Notes
+## Fallbacks when Reddit blocks requests
+If Reddit answers with 403 / a bot check, lookups fall back in this order:
+1. **Redlib mirrors** (third-party Reddit front-ends). Set `REDDIT_MIRRORS` to a comma-separated list of instance URLs to override the built-in list. Public instances often sit behind their own bot checks, so this is best-effort.
+2. **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**, if it is installed and on your PATH (it also handles the download).
 Reddit may rate-limit or block requests from some networks (e.g. cloud/VPN IPs); the error message will say so.
