@@ -1,0 +1,14 @@
+{
+  "name": "reddit-vid-downloader",
+  "version": "2.0.0",
+  "description": "Download Reddit-hosted videos (with audio) via CLI or a local web UI",
+  "main": "lib/reddit.js",
+  "bin": { "redditvid": "redditvid.js" },
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node redditvid.js",
+    "test": "node test.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
